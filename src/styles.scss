@@ -1,0 +1,40 @@
+body {
+  background: #b8eaff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
+  font-size: 10px;
+  outline: 1px solid #aaa;
+  width: 600px;
+  height: 600px;
+}
+
+$r: rgb(255, 0, 0);
+$o: rgb(255, 128, 0);
+$dr1: rgb(224,0,0);
+$dr2: rgb(192,0,0);
+$r: rgb(255,0,0);
+$lr1: rgb(255,48,48);
+$lr2: rgb(255,92,92);
+$transparent: rgb(255, 0, 0, 0);
+
+.canvas {
+  background:
+          linear-gradient(60deg, $r 55%, $transparent 56%) 50% 20% / 100px 100px,
+          conic-gradient(at bottom, $o 49%, $transparent 50%) 50% 75% / 80px 40px;
+}
+
+.canvas {
+  background-repeat: no-repeat;
+}

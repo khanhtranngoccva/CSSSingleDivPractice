@@ -1,0 +1,51 @@
+body {
+  background: #b8eaff;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
+  font-size: 10px;
+  width: 600px;
+  height: 630px;
+  flex: none;
+}
+
+$red: rgb(255, 0, 0);
+$lightGray: rgb(248, 248, 248);
+$orange: rgb(255, 128, 0);
+$lightOrange: rgb(255, 192, 0);
+$transparent: rgba(255, 0, 0, 0);
+
+.canvas {
+  background: // Group 1
+          radial-gradient(50% 90% at bottom, $transparent 99.5%, $lightGray 100%) calc(100% - 90px) 330px / 110px 30px,
+          radial-gradient(50% 90% at bottom, $transparent 99.5%, $red 100%) 50% 330px / 200px 30px,
+          radial-gradient(50% 90% at bottom, $transparent 99.5%, $lightGray 100%) 90px 330px / 110px 30px,
+          radial-gradient(50% 90% at bottom, $transparent 99.5%, $red 100%) 100% 330px / 90px 30px,
+          radial-gradient(50% 90% at bottom, $transparent 99.5%, $red 100%) 0 330px / 90px 30px,
+          radial-gradient(50% 100% at bottom, $red 99.5%, $transparent 100%) 50% 30px / 200px 300px,
+          radial-gradient(50% 100% at bottom, $lightGray 99.5%, $transparent 100%) 50% 30px / 420px 300px,
+          radial-gradient(50% 100% at bottom, $red 99.5%, $transparent 100%) 50% 30px / 600px 300px,
+            // Group 2
+          radial-gradient(100% 100% at bottom right, $orange 100%, $transparent 100%) calc(50% - 10px) 0 / 20px 20px,
+          radial-gradient(100% 100% at bottom left, $lightOrange 100%, $transparent 100%) calc(50% + 10px) 0 / 20px 20px,
+          linear-gradient(90deg, $orange 50%, $lightOrange 50%) 50% 20px / 40px 550px,
+          radial-gradient(50% 100% at top, $transparent 33%, $lightOrange 33%, $lightOrange 66%, $orange 66%, $orange 100%, $transparent 100%) calc(50% + 40px) 570px / 120px 60px,
+          radial-gradient(100% 100% at bottom left, $orange 100%, $transparent 100%) calc(50% + 80px + 10px) 550px / 20px 20px,
+          radial-gradient(100% 100% at bottom right, $lightOrange 100%, $transparent 100%) calc(50% + 80px - 10px) 550px / 20px 20px,
+}
+
+.canvas {
+  background-repeat: no-repeat;
+}
